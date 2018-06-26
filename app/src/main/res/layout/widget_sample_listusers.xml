@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/ll_litContainer"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="2dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_margin_half"
+        android:background="@color/placeholder_grey">
+
+        <ProgressBar
+            android:id="@+id/movie_progress"
+            android:layout_centerInParent="true"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="@dimen/activity_margin"
+            android:layout_height="@dimen/activity_margin"
+            android:layout_gravity="center"
+            android:theme="@style/CircularProgress" />
+
+        <ImageView
+            android:id="@+id/iv_userimage"
+            android:layout_width="@dimen/activity_margin"
+            android:layout_height="@dimen/activity_margin"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/movie_year"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_content"
+            android:layout_marginStart="@dimen/activity_margin_content"
+            android:textColor="#000000"
+
+            tools:text="Welcome !!!" />
+
+        <TextView
+            android:id="@+id/txtv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_content"
+            android:layout_marginStart="@dimen/activity_margin_content"
+            android:layout_marginTop="@dimen/activity_margin_quarter"
+            android:maxLines="1"
+            android:textColor="#000000"
+            tools:text="User Name" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+
+
